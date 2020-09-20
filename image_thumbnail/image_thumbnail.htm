@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Thumbnails</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box:after{
+            content: '';
+            flex-grow: 99999;
+    	}
+    	.imgBox{
+                flex-grow: 1;
+                margin: 5px;
+    	}
+    	.imgBox img{
+    	    width: auto;
+    	    height: 200px;
+    	    object-fit: cover; 
+    	}
+        figure {
+            width: -webkit-min-content;
+            width: -moz-min-content;
+            width: min-content;
+        }
+        figure.item {
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+        }
+    	.caption {
+            display: block;
+        }
+        .zoom {
+          padding: 5px;
+          transition: transform .2s;
+          margin: 0 auto;
+        }
+        .zoom:hover {
+          -ms-transform: scale(1.05); /* IE 9 */
+          -webkit-transform: scale(1.05); /* Safari 3-8 */
+          transform: scale(1.05); 
+        }
+         </style>
+  </head>
+  <body>
+    <div class="box" id="box">
+      <div class="imgBox">
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146916369_e9b83c1e3c_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146916369_e9b83c1e3c_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/005150322_e4af5de813.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/005150322_e4af5de813.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/023961073_HAMERDANCE.gif">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/023961073_HAMERDANCE.gif">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/423961073_f69be369c8_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/423961073_f69be369c8_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/3172102858_aca20d4bfc_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/3172102858_aca20d4bfc_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/4187240316_4011f37794_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/4187240316_4011f37794_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5138492918_52e05e9690_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5138492918_52e05e9690_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5138709996_b7121cff99_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5138709996_b7121cff99_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5144739118_c76666b359_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5144739118_c76666b359_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146759677_124458b802_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146759677_124458b802_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5147698610_03f23ccd7e_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5147698610_03f23ccd7e_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5152882789_284abe8865.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5152882789_284abe8865.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5238554034_8d0a084964_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5238554034_8d0a084964_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/11644109505_33d9b28e5e_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/11644109505_33d9b28e5e_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146916369_e9b83c1e3c_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146916369_e9b83c1e3c_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/005150322_e4af5de813.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/005150322_e4af5de813.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/023961073_HAMERDANCE.gif">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/023961073_HAMERDANCE.gif">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/423961073_f69be369c8_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/423961073_f69be369c8_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/3172102858_aca20d4bfc_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/3172102858_aca20d4bfc_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/4187240316_4011f37794_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/4187240316_4011f37794_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146916369_e9b83c1e3c_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146916369_e9b83c1e3c_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/005150322_e4af5de813.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/005150322_e4af5de813.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/023961073_HAMERDANCE.gif">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/023961073_HAMERDANCE.gif">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/423961073_f69be369c8_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/423961073_f69be369c8_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/3172102858_aca20d4bfc_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/3172102858_aca20d4bfc_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/4187240316_4011f37794_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/4187240316_4011f37794_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5138492918_52e05e9690_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5138492918_52e05e9690_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5138709996_b7121cff99_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5138709996_b7121cff99_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5144739118_c76666b359_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5144739118_c76666b359_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146759677_124458b802_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146759677_124458b802_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5147698610_03f23ccd7e_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5147698610_03f23ccd7e_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5152882789_284abe8865.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5152882789_284abe8865.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5238554034_8d0a084964_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5238554034_8d0a084964_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/11644109505_33d9b28e5e_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/11644109505_33d9b28e5e_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146916369_e9b83c1e3c_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/5146916369_e9b83c1e3c_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/005150322_e4af5de813.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/005150322_e4af5de813.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/023961073_HAMERDANCE.gif">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/023961073_HAMERDANCE.gif">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/423961073_f69be369c8_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/423961073_f69be369c8_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/3172102858_aca20d4bfc_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/3172102858_aca20d4bfc_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+        <a href="http://dvdn.online.fr/show-all-images-in-folder/imgs/4187240316_4011f37794_b.jpg">
+          <figure class="item">
+            <div class="zoom">
+              <img src="http://dvdn.online.fr/show-all-images-in-folder/imgs/4187240316_4011f37794_b.jpg">
+              <figcaption class="caption">A very very very very very very long description</figcaption>
+            </div>
+          </figure>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
